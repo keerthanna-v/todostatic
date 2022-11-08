@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <title>Addtodo</title>
+    <link rel="stylesheet" href="{%static "css/style2.css"%}"/>
+</head>
+<body>
+    <div>
+    <form method="post">
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type="submit" value="save"/>
+    </form>
+</div>
+    
+</body>
+</html>

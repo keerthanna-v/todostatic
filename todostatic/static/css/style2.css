@@ -1,0 +1,39 @@
+input[type=text], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin-left: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: beige;
+  }
+  
+  input[type=submit] {
+    width: 60%;
+    background-color:#1fa8ed;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 70px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #1fa8ed;
+
+  }
+  div {
+    border-radius: 5px;
+    background-color: #e1dce3;
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 550px;
+    margin-right: 550px;
+  }  
+  body{
+    background-image: linear-gradient(#1fa8ed,#ed371f);
+    background-size: 1000px 1000px;
+  }

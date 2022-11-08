@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <title>ViewTODO</title>
+    <link rel="stylesheet" href="{%static "css/style3.css"%}"/>
+</head>
+<body>
+    <h1>_Todo_List_</h1>
+    {% if form %}
+    <table id="customers">
+        <tr>
+            <th>TITLE</th>
+            <th>DESCRIPTION</th>
+            <th>DATE</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </tr>
+    {% for c in form %}
+    <tr>
+        <td>{{c.title}}</td>
+        <td>{{c.details}}</td>
+        <td>{{c.time}}</td>
+   <td><a href="/updatetodo/{{c.id}}" >UPDATE</a></td>
+    <td><a href="/delete/{{c.id}}">DELETE</a></td>
+</tr>
+</table>
+
+</div>
+
+    {% endfor %}
+    {% else %}
+    <div class="elsepart">
+    <h1>Sorry,No record found</h1>
+</div>
+    {%endif%}
+</body>
+</html>
